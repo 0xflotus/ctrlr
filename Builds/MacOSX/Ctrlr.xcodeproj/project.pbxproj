@@ -29,6 +29,10 @@
 			isa = PBXBuildFile;
 			fileRef = 75C913600A8B4A361ED6FABA;
 		};
+		FD4CB042D9A9FA3901985373 = {
+			isa = PBXBuildFile;
+			fileRef = 15C8E6290DF559375AA00C3D;
+		};
 		98F0ADC8B423ED8696F5E9AF = {
 			isa = PBXBuildFile;
 			fileRef = 60B3BC1222FDF4FF37801063;
@@ -36,10 +40,6 @@
 		0AF3FD7D96745ED04BC5F6D4 = {
 			isa = PBXBuildFile;
 			fileRef = 131F986D1C2BA312C45E69DA;
-		};
-		FD4CB042D9A9FA3901985373 = {
-			isa = PBXBuildFile;
-			fileRef = 15C8E6290DF559375AA00C3D;
 		};
 		7612184F35F3845882E2E753 = {
 			isa = PBXBuildFile;
@@ -1422,6 +1422,13 @@
 			lastKnownFileType = sourcecode.cpp.cpp;
 			name = CtrlrMidiInputComparator.cpp;
 			path = ../../Source/MIDI/CtrlrMidiInputComparator.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
+		1646FEF997F80824A51F8F69 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			name = "AUv3_AppExtension.entitlements";
+			path = "AUv3_AppExtension.entitlements";
 			sourceTree = "SOURCE_ROOT";
 		};
 		164E68D7C717EDE14B5F0041 = {
@@ -3284,13 +3291,6 @@
 			lastKnownFileType = sourcecode.c.h;
 			name = CtrlrFixedSlider.h;
 			path = ../../Source/UIComponents/CtrlrComponents/Sliders/CtrlrFixedSlider.h;
-			sourceTree = "SOURCE_ROOT";
-		};
-		7ACE87FFB3FEC7F64FF2F454 = {
-			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
-			name = Ctrlr.entitlements;
-			path = Ctrlr.entitlements;
 			sourceTree = "SOURCE_ROOT";
 		};
 		7AD314D3B5FE21C77810847E = {
@@ -7056,9 +7056,9 @@
 		7F74C7F7D7E281E704B9D345 = {
 			isa = PBXGroup;
 			children = (
+				15C8E6290DF559375AA00C3D,
 				60B3BC1222FDF4FF37801063,
 				131F986D1C2BA312C45E69DA,
-				15C8E6290DF559375AA00C3D,
 				6FCCE378C8BCCB24D7C319B4,
 				00CA10B65166797BBFF46544,
 				337D964741D139674F961A22,
@@ -7103,6 +7103,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -7110,6 +7111,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -7515,7 +7517,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_ENTITLEMENTS = "Ctrlr.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "AUv3_AppExtension.entitlements";
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
@@ -7579,7 +7581,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_ENTITLEMENTS = "Ctrlr.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "AUv3_AppExtension.entitlements";
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
@@ -7918,6 +7920,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PRODUCT_NAME = "Ctrlr";
+				SDKROOT = macosx;
 				WARNING_CFLAGS = "-Wreorder";
 				ZERO_LINK = NO;
 			};
@@ -7965,6 +7968,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "Ctrlr";
+				SDKROOT = macosx;
 				WARNING_CFLAGS = "-Wreorder";
 				ZERO_LINK = NO;
 			};
@@ -8184,9 +8188,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4CB042D9A9FA3901985373,
 				98F0ADC8B423ED8696F5E9AF,
 				0AF3FD7D96745ED04BC5F6D4,
-				FD4CB042D9A9FA3901985373,
 				7B646BA09CE20A58EF99FEB4,
 				AD5F166D68B28CCC99A2F46B,
 				6295D31908D48C37464D1999,
@@ -8246,9 +8250,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4CB042D9A9FA3901985373,
 				98F0ADC8B423ED8696F5E9AF,
 				0AF3FD7D96745ED04BC5F6D4,
-				FD4CB042D9A9FA3901985373,
 				7612184F35F3845882E2E753,
 				7B646BA09CE20A58EF99FEB4,
 				AD5F166D68B28CCC99A2F46B,

@@ -10,7 +10,7 @@
               pluginIsSynth="1" pluginWantsMidiIn="1" pluginProducesMidiOut="1"
               pluginIsMidiEffectPlugin="1" pluginEditorRequiresKeys="1" pluginAUExportPrefix="CtrlrAU"
               pluginRTASCategory="" aaxIdentifier="com.instigator.Ctrlr" pluginAAXCategory="2"
-              jucerVersion="5.4.5" companyName="Instigator" pluginAUMainType="CtrlrAU"
+              jucerVersion="5.4.7" companyName="Instigator" pluginAUMainType="CtrlrAU"
               pluginFormats="buildVST,buildVST3,buildAU,buildAUv3,buildStandalone"
               pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn,pluginProducesMidiOut,pluginIsMidiEffectPlugin,pluginEditorRequiresKeys">
   <MAINGROUP id="SRLsFb" name="Ctrlr">

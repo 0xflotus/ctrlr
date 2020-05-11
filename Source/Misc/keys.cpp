@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #ifdef LINUX
 #include <float.h>
 #include <sys/time.h>
